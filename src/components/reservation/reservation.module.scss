@@ -1,0 +1,100 @@
+section {
+    .wrapper {
+        padding: 50px 0;
+        max-width: 1150px;
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        .smallWrapper{
+            padding: 0 40px;
+        }
+        @media (min-width: 1024px) {
+            height: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            .smallWrapper {
+                width: 30%;
+                padding: 0;
+
+            }
+        }
+        .image {
+            height: 350px;
+            width: 100%;
+            background-color: yellow;
+            border-radius: 10px;
+
+            @media (min-width: 1024px) {
+                width: 60%;
+                height: 600px;
+            }
+        }
+
+
+        .title {
+            color: #4D312C;
+            font-size: 29px;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+
+        .text {
+            font-size: 14px;
+            color: #6E6575;
+            font-weight: 300;
+            font-family: "Raleway", sans-serif;
+        }
+
+        .input {
+            border: 1px solid #eaeaea;
+            height: 50px;
+            width: 100%;
+            padding: 10px 25px;
+            padding-right: 30px;
+            color: #071112;
+            font-weight: 500;
+            text-transform: capitalize;
+            border-radius: 25px;
+            margin: 5px 0;
+
+        }
+
+        .input:focus::placeholder {
+            color: transparent;
+        }
+
+        .textArea {
+            margin: 5px 0;
+
+            transition: all .4s ease-out 0s;
+            color: #6E6575;
+            font-size: 16px;
+            font-weight: 400;
+            border-radius: 25px;
+            border: 1px solid #eaeaea;
+            text-transform: capitalize;
+            height: 125px;
+            width: 100%;
+            padding: 21px 23px;
+
+        }
+
+        .button {
+            background: #fe6040;
+            border: none;
+            font-size: 15px;
+            padding: 15px 0;
+            color: white;
+            border-radius: 30px;
+            font-weight: 600;
+            margin: 10px 0;
+            width: 100%;
+
+        }
+
+    }
+
+
+
+}

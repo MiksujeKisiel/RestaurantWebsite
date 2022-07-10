@@ -1,0 +1,17 @@
+[
+    {
+        "src": "../images/services1.png",
+        "text": "Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.",
+        "title": "Healthy Meal"
+    },
+    {
+        "src": "../images/services2.png",
+        "text": "Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.",
+        "title": "Fast Food"
+    },
+    {
+        "src": "../images/services3.png",
+        "text": "Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.",
+        "title": "Delicious Coffe"
+    }
+]

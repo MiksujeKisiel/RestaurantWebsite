@@ -1,0 +1,50 @@
+.section {
+    background-image: url(../../images/background-menu.webp);
+
+    .wrapper {
+        max-width: 1150px;
+        margin: 50px auto;
+        padding: 0 20px;
+        @media (min-width: 1280px) {
+            padding: 0;
+        }
+
+        .topSection {
+
+            @media (min-width: 768px) {
+                display: flex;
+                justify-content: space-between;
+
+            }
+        }
+    }
+
+    .title {
+        color: white;
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .text {
+        color: #94817E;
+        font-size: 18px;
+        @media (min-width: 768px) {
+            font-size: 16px;
+            max-width: 500px;
+        }
+    }
+
+    .button {
+        background: #fe6040;
+        border: none;
+        font-size: 15px;
+        padding: 20px 0;
+        width: 180px;
+        color: white;
+        border-radius: 30px;
+        font-weight: 600;
+        margin: 10px 0;
+        align-self: flex-start;
+
+    }
+}

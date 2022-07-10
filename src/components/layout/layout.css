@@ -1,0 +1,66 @@
+:root {
+  --border-radius: 4px;
+  --color-brown: #4d312c;
+  --color-black: : #000;
+  --color-orange: #fe6040;
+  --color-grey: #94817E;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  --font-lg: 18px;
+  --font-md: 16px;
+  --font-sm: 14px;
+  --font-sx: 12px;
+  --line-height-loose: 1.75;
+  --line-height-normal: 1.5;
+  --line-height-dense: 1.1;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 64px;
+  --size-content: 54rem;
+  --size-gutter: var(--space-5);
+  --size-gap: var(--space-6);
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+ul, li, a, h1, h2, h3, p{
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  font-family: 'Mitr', sans-serif;
+  margin: 10px 0;
+  color: black;
+}
+section{
+  padding: 60px 0;
+}
+p{
+  font-family: 'Raleway', sans-serif;
+  
+}
+
+
+
+html {
+  font-size: 62.5%; 
+  overflow-y: scroll;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x:hidden;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+  font-size: 1.6rem; 
+}

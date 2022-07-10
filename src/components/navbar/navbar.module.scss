@@ -1,0 +1,59 @@
+.navbar{
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    padding: 0px 50px;
+    z-index: 100;
+    width: 100%;
+    .linkWrapper{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo{
+            margin-right: 70px;
+            transform: scale(0.8);
+        }
+        .link{
+            color: #4D312C;
+            font-weight: 500;
+            padding: 28px 5px;
+            font-size: 14px;
+            margin: 0 20px;
+        };
+    }
+  
+    .rightSection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            .menuButton {
+                background: #fe6040;
+                border: none;
+                font-size: 15px;
+                padding: 20px 0;
+                width: 180px;
+                color: white;
+                border-radius: 30px;
+                font-weight: 600;
+                margin: 20px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                .icon{
+                    fill: white;
+                    width: 20px;
+                    height: 20px;
+                }
+            
+            }
+            .bookTableButton{
+                color: white;
+                margin-right: 30px;
+                cursor: pointer;
+
+            }
+    }
+}
