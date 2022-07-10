@@ -10,6 +10,7 @@ import Reservation from "../components/reservation/resevervation"
 import Customers from "../components/customers/customers"
 import Gallery from "../components/gallery/gallery"
 import Footer from "../components/footer/footer"
+import HeroSection from "../components/heros/heroSection"
 const ContactPage = () => {
 
  
@@ -17,11 +18,8 @@ const ContactPage = () => {
 
   return(
 <Layout>
-    <Hero/>
-    <About/>
-    <Menu/>
+    <HeroSection title="Contact Us"/>
     <Reservation/>
-    <Customers/>
     <Gallery/>
     <Footer/>
   </Layout>

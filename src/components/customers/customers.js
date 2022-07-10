@@ -39,8 +39,9 @@ text="Making a reservation at Délicious restaurant is easy and takes just a cou
            className={styles.img}
            alt={title}
          />
-            <h2  className={styles.title}>{title}</h2>
-            <p className={styles.text}>{text}</p>
+            <p className={styles.text}>,,{text}"</p>
+            <p  className={styles.title}>{name}</p>
+
           </article>
         </li>
     

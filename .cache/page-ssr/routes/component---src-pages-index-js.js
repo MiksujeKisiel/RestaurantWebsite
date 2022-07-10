@@ -161,10 +161,24 @@ var text = "customers-module--text--zRdDO";
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "link": () => (/* binding */ link)
+/* harmony export */   "email": () => (/* binding */ email),
+/* harmony export */   "footerWrapper": () => (/* binding */ footerWrapper),
+/* harmony export */   "link": () => (/* binding */ link),
+/* harmony export */   "linkWrapper": () => (/* binding */ linkWrapper),
+/* harmony export */   "logoWrapper": () => (/* binding */ logoWrapper),
+/* harmony export */   "phoneNumber": () => (/* binding */ phoneNumber),
+/* harmony export */   "street": () => (/* binding */ street),
+/* harmony export */   "text": () => (/* binding */ text)
 /* harmony export */ });
 // Exports
 var link = "footer-module--link--svGkA";
+var footerWrapper = "footer-module--footerWrapper--aStU2";
+var logoWrapper = "footer-module--logoWrapper--vJAEY";
+var linkWrapper = "footer-module--linkWrapper--reqFb";
+var text = "footer-module--text--iKtq-";
+var street = "footer-module--street--IHyCV";
+var email = "footer-module--email--DcNaS";
+var phoneNumber = "footer-module--phoneNumber--5a9c+";
 
 
 /***/ }),
@@ -178,12 +192,10 @@ var link = "footer-module--link--svGkA";
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "gallery": () => (/* binding */ gallery),
-/* harmony export */   "image": () => (/* binding */ image)
+/* harmony export */   "gallery": () => (/* binding */ gallery)
 /* harmony export */ });
 // Exports
 var gallery = "gallery-module--gallery--gb0c0";
-var image = "gallery-module--image--vgxCT";
 
 
 /***/ }),
@@ -197,8 +209,11 @@ var image = "gallery-module--image--vgxCT";
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "buttonWrapper": () => (/* binding */ buttonWrapper),
 /* harmony export */   "image": () => (/* binding */ image),
 /* harmony export */   "menuButton": () => (/* binding */ menuButton),
+/* harmony export */   "playButton": () => (/* binding */ playButton),
+/* harmony export */   "playSvg": () => (/* binding */ playSvg),
 /* harmony export */   "smallWrapper": () => (/* binding */ smallWrapper),
 /* harmony export */   "text": () => (/* binding */ text),
 /* harmony export */   "textWrapper": () => (/* binding */ textWrapper),
@@ -212,7 +227,10 @@ var smallWrapper = "hero-module--smallWrapper--vqZh4";
 var textWrapper = "hero-module--textWrapper--JzTNb";
 var title = "hero-module--title--ECmwx";
 var text = "hero-module--text--QFaJn";
+var buttonWrapper = "hero-module--buttonWrapper--9iRLD";
 var menuButton = "hero-module--menuButton--tkbFA";
+var playButton = "hero-module--playButton--sOB6I";
+var playSvg = "hero-module--playSvg--cTB08";
 
 
 /***/ }),
@@ -276,10 +294,24 @@ var button = "product-module--button--xa3Gq";
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "navbar": () => (/* binding */ navbar)
+/* harmony export */   "bookTableButton": () => (/* binding */ bookTableButton),
+/* harmony export */   "icon": () => (/* binding */ icon),
+/* harmony export */   "link": () => (/* binding */ link),
+/* harmony export */   "linkWrapper": () => (/* binding */ linkWrapper),
+/* harmony export */   "logo": () => (/* binding */ logo),
+/* harmony export */   "menuButton": () => (/* binding */ menuButton),
+/* harmony export */   "navbar": () => (/* binding */ navbar),
+/* harmony export */   "rightSection": () => (/* binding */ rightSection)
 /* harmony export */ });
 // Exports
 var navbar = "navbar-module--navbar--VQF5q";
+var linkWrapper = "navbar-module--linkWrapper--OqiI7";
+var logo = "navbar-module--logo--pNoVd";
+var link = "navbar-module--link--gxHoz";
+var rightSection = "navbar-module--rightSection--Y19WZ";
+var menuButton = "navbar-module--menuButton--pK5XZ";
+var icon = "navbar-module--icon--Isgcy";
+var bookTableButton = "navbar-module--bookTableButton--slChL";
 
 
 /***/ }),
@@ -1187,7 +1219,7 @@ const Customers = ({}) => {
       className: _customers_module_scss__WEBPACK_IMPORTED_MODULE_2__.title
     }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", {
       className: _customers_module_scss__WEBPACK_IMPORTED_MODULE_2__.text
-    }, text))));
+    }, ",,", text, "\""))));
   })));
 };
 
@@ -1213,10 +1245,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Contact = ({}) => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: _footer_module_scss__WEBPACK_IMPORTED_MODULE_1__.text
+  }, "Contact Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: _footer_module_scss__WEBPACK_IMPORTED_MODULE_1__.street
   }, "76/A, Green Lane, Dhanmondi, NYC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    className: _footer_module_scss__WEBPACK_IMPORTED_MODULE_1__.phonenumber
+    className: _footer_module_scss__WEBPACK_IMPORTED_MODULE_1__.phoneNumber
   }, "+10 (78) 738-9083"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: _footer_module_scss__WEBPACK_IMPORTED_MODULE_1__.email
   }, "restaurco89@gmail.com"));
@@ -1242,23 +1276,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _footer_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer.module.scss */ "./src/components/footer/footer.module.scss");
 /* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact */ "./src/components/footer/contact.js");
 /* harmony import */ var _links__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./links */ "./src/components/footer/links.js");
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+
 
 
 
 
 
 const Footer = ({}) => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    className: "img"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    className: "icon"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    className: "icon"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    className: "icon"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    className: "icon"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_links__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_contact__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: _footer_module_scss__WEBPACK_IMPORTED_MODULE_1__.footerWrapper
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: _footer_module_scss__WEBPACK_IMPORTED_MODULE_1__.logoWrapper
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
+    className: _footer_module_scss__WEBPACK_IMPORTED_MODULE_1__.logo,
+    placeholder: "blurred",
+    src: "../../images/logo.webp",
+    alt: "wee",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/4035687316.json */ "./.cache/caches/gatsby-plugin-image/4035687316.json")
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Land behold it created good saw after she'd Our set living. Signs midst dominion creepeth morning laboris nisi ufsit aliquip.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_links__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_links__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_contact__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
@@ -1285,9 +1321,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Links = ({}) => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: _footer_module_scss__WEBPACK_IMPORTED_MODULE_1__.linkWrapper
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: _footer_module_scss__WEBPACK_IMPORTED_MODULE_1__.text
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+  }, "Quick Links"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     className: _footer_module_scss__WEBPACK_IMPORTED_MODULE_1__.link,
     to: "/"
   }, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
@@ -1365,7 +1403,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _hero_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hero.module.scss */ "./src/components/hero/hero.module.scss");
-/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var _assets_button_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/button.svg */ "./src/assets/button.svg");
+/* harmony import */ var _assets_button_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_button_svg__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 
@@ -1381,15 +1422,20 @@ const Hero = ({}) => {
     className: _hero_module_scss__WEBPACK_IMPORTED_MODULE_1__.title
   }, "Meet, Eat & Enjoy the true test"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
     className: _hero_module_scss__WEBPACK_IMPORTED_MODULE_1__.text
-  }, "Making a reservation at D\xE9licious restaurant is easy and takes just a couple of minutes."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+  }, "Making a reservation at D\xE9licious restaurant is easy and takes just a couple of minutes."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: _hero_module_scss__WEBPACK_IMPORTED_MODULE_1__.buttonWrapper
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     className: _hero_module_scss__WEBPACK_IMPORTED_MODULE_1__.menuButton
   }, "Our menu"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    className: _hero_module_scss__WEBPACK_IMPORTED_MODULE_1__.menuButton
-  }, "Watch Video"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
+    className: _hero_module_scss__WEBPACK_IMPORTED_MODULE_1__.playButton
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement((_assets_button_svg__WEBPACK_IMPORTED_MODULE_2___default()), {
+    className: _hero_module_scss__WEBPACK_IMPORTED_MODULE_1__.playSvg
+  }), "Watch Video")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+    placeholder: "blurred",
     className: _hero_module_scss__WEBPACK_IMPORTED_MODULE_1__.image,
     src: "../../images/herro.webp",
     alt: "wee",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2071023901.json */ "./.cache/caches/gatsby-plugin-image/2071023901.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/18733917.json */ "./.cache/caches/gatsby-plugin-image/18733917.json")
   }));
 };
 
@@ -1542,6 +1588,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _navbar_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar.module.scss */ "./src/components/navbar/navbar.module.scss");
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var _assets_phone_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/phone.svg */ "./src/assets/phone.svg");
+/* harmony import */ var _assets_phone_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_phone_svg__WEBPACK_IMPORTED_MODULE_3__);
+
+
 
 
 
@@ -1549,15 +1600,35 @@ __webpack_require__.r(__webpack_exports__);
 const Navbar = ({}) => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", {
     className: _navbar_module_scss__WEBPACK_IMPORTED_MODULE_1__.navbar
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: _navbar_module_scss__WEBPACK_IMPORTED_MODULE_1__.linkWrapper
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
+    className: _navbar_module_scss__WEBPACK_IMPORTED_MODULE_1__.logo,
+    placeholder: "blurred",
+    src: "../../images/logo.webp",
+    alt: "wee",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/4035687316.json */ "./.cache/caches/gatsby-plugin-image/4035687316.json")
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    className: _navbar_module_scss__WEBPACK_IMPORTED_MODULE_1__.link,
     to: "/"
   }, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    className: _navbar_module_scss__WEBPACK_IMPORTED_MODULE_1__.link,
     to: "/menu"
   }, "Menu"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    className: _navbar_module_scss__WEBPACK_IMPORTED_MODULE_1__.link,
     to: "/about"
   }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    className: _navbar_module_scss__WEBPACK_IMPORTED_MODULE_1__.link,
     to: "/contact"
-  }, "Contact"));
+  }, "Contact")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: _navbar_module_scss__WEBPACK_IMPORTED_MODULE_1__.rightSection
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    className: _navbar_module_scss__WEBPACK_IMPORTED_MODULE_1__.bookTableButton
+  }, "Book table"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    className: _navbar_module_scss__WEBPACK_IMPORTED_MODULE_1__.menuButton
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement((_assets_phone_svg__WEBPACK_IMPORTED_MODULE_3___default()), {
+    className: _navbar_module_scss__WEBPACK_IMPORTED_MODULE_1__.icon
+  }), "+10 (78) 783 3674")));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);
@@ -1584,9 +1655,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Reservation = ({}) => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
-    className: _reservation_module_scss__WEBPACK_IMPORTED_MODULE_1__.section
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: _reservation_module_scss__WEBPACK_IMPORTED_MODULE_1__.wrapper
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../../images/reservation.jpg",
@@ -1715,14 +1784,67 @@ const IndexPage = () => {
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/2071023901.json":
+/***/ "./src/assets/button.svg":
+/*!*******************************!*\
+  !*** ./src/assets/button.svg ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var React = __webpack_require__(/*! react */ "react");
+
+function Button (props) {
+    return React.createElement("svg",props,React.createElement("path",{"id":"play-button","d":"M37.317,11.091a1,1,0,1,0-1.057,1.7,3.7,3.7,0,0,1,0,6.271L19.874,29.274a3.7,3.7,0,0,1-5.65-3.136V5.7a3.7,3.7,0,0,1,5.65-3.136l9.539,5.948a1,1,0,1,0,1.057-1.7L20.931.874A5.693,5.693,0,0,0,12.226,5.7V26.138a5.622,5.622,0,0,0,2.931,4.978,5.623,5.623,0,0,0,5.775-.147L37.317,20.752a5.693,5.693,0,0,0,0-9.662Z","transform":"translate(-12.226 0)","fill":"#fe5f41"}));
+}
+
+Button.defaultProps = {"width":"27.772","height":"31.843","viewBox":"0 0 27.772 31.843"};
+
+module.exports = Button;
+
+Button.default = Button;
+
+
+/***/ }),
+
+/***/ "./src/assets/phone.svg":
+/*!******************************!*\
+  !*** ./src/assets/phone.svg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var React = __webpack_require__(/*! react */ "react");
+
+function Phone (props) {
+    return React.createElement("svg",props,React.createElement("path",{"d":"M20.914 17.743l-2.091 1.178a1.319 1.319 0 0 1-1.58-.217l-6.979-6.979a1.32 1.32 0 0 1-.217-1.58l1.178-2.091a1.978 1.978 0 0 0-.325-2.37L7.766 2.55a1.978 1.978 0 0 0-2.798 0L3.545 3.972a5.276 5.276 0 0 0-.793 6.446l.714 1.19a41.36 41.36 0 0 0 14.946 14.631l.141.081c2.102 1.201 4.699.851 6.382-.831l1.486-1.486a1.978 1.978 0 0 0 0-2.798l-3.136-3.136a1.978 1.978 0 0 0-2.371-.326z"}));
+}
+
+Phone.defaultProps = {"id":"Layer_1","x":"0","y":"0","version":"1.1","viewBox":"0 0 29 29","xmlSpace":"preserve"};
+
+module.exports = Phone;
+
+Phone.default = Phone;
+
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-image/18733917.json":
+/*!*********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/18733917.json ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"layout":"constrained","placeholder":{"fallback":"data:image/webp;base64,UklGRgQBAABXRUJQVlA4IPgAAADQBQCdASoUABUAPtFgqE+oJSOiKAgBABoJQBOmcHbusAByjR/h2lSln6NQDhK75iCkMUMVurqYAOIt1Ek3iTpoiEzsjT7yawuqyBXhy2AsmfIruUNNaXU2+TgLKTMn15Ge/IK1IV5HB3s1FMDWPH6UBZhIeG2khhVPsx2bJWzT9rb9aDXBldnruTMiOStq7C7c1jNHMDxIgAWRQ676c4PWxR092W+W8vn4P7G5X7fb2WDZQ2kE88GbvdvB/uf+4OVCfLa5HeSU0f+DhNKRUeP8d+z1kIEaKTp3vjol3QhEFt0eRKdtqoYoQdbs3Vjj9Kw7X0T5EAYgAA=="},"images":{"fallback":{"src":"/static/6dea6070b98dbe60a93d1f5ba586d603/986a6/herro.webp","srcSet":"/static/6dea6070b98dbe60a93d1f5ba586d603/66d02/herro.webp 256w,\\n/static/6dea6070b98dbe60a93d1f5ba586d603/3b527/herro.webp 512w,\\n/static/6dea6070b98dbe60a93d1f5ba586d603/986a6/herro.webp 1024w","sizes":"(min-width: 1024px) 1024px, 100vw"},"sources":[]},"width":1024,"height":1060}');
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-image/4035687316.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/2071023901.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/4035687316.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#e8e8e8","images":{"fallback":{"src":"/static/6dea6070b98dbe60a93d1f5ba586d603/986a6/herro.webp","srcSet":"/static/6dea6070b98dbe60a93d1f5ba586d603/66d02/herro.webp 256w,\\n/static/6dea6070b98dbe60a93d1f5ba586d603/3b527/herro.webp 512w,\\n/static/6dea6070b98dbe60a93d1f5ba586d603/986a6/herro.webp 1024w","sizes":"(min-width: 1024px) 1024px, 100vw"},"sources":[]},"width":1024,"height":1060}');
+module.exports = JSON.parse('{"layout":"constrained","placeholder":{"fallback":"data:image/webp;base64,UklGRt4AAABXRUJQVlA4WAoAAAAQAAAAEwAABQAAQUxQSGwAAAABcBsAgOHcx7ZdpXJSWZVts9UUxhBsbU6RVsvkV4iICcBmlpsiAcDMPpevZw3geH+t6qj++IA1JBQqXUimF0u0cuPyGh41DhhjuOaLxm0tl9/ndmbfk9+iBrAQmc5EURlkEhXDwMbbUw8BwARWUDggTAAAAFADAJ0BKhQABgA+0VSjS6gkoyGwCAEAGglkAJ0AG4uRsA4AANqsqL0+srt0l6tzOH/p7uGsOes8rv/7ufHUy39PdLxTrydFsT3+AAA="},"images":{"fallback":{"src":"/static/f4c708665f18c06401cfa3d3023ad55a/68f6f/logo.webp","srcSet":"/static/f4c708665f18c06401cfa3d3023ad55a/e3232/logo.webp 56w,\\n/static/f4c708665f18c06401cfa3d3023ad55a/02372/logo.webp 111w,\\n/static/f4c708665f18c06401cfa3d3023ad55a/68f6f/logo.webp 222w","sizes":"(min-width: 222px) 222px, 100vw"},"sources":[]},"width":222,"height":64}');
 
 /***/ }),
 
@@ -1766,7 +1888,7 @@ module.exports = JSON.parse('{"data":{"allGalleryJson":{"nodes":[{"src":{"childI
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"allCustomersJson":{"nodes":[{"text":"Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.","name":"Ania","src":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/22708c9b94487635256c6665ae3117da/28510/food.webp","srcSet":"/static/22708c9b94487635256c6665ae3117da/789ca/food.webp 51w,\\n/static/22708c9b94487635256c6665ae3117da/e6c54/food.webp 101w,\\n/static/22708c9b94487635256c6665ae3117da/28510/food.webp 202w","sizes":"(min-width: 202px) 202px, 100vw"},"sources":[]},"width":202,"height":202}}}},{"text":"Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.","name":"Robert","src":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/22708c9b94487635256c6665ae3117da/28510/food.webp","srcSet":"/static/22708c9b94487635256c6665ae3117da/789ca/food.webp 51w,\\n/static/22708c9b94487635256c6665ae3117da/e6c54/food.webp 101w,\\n/static/22708c9b94487635256c6665ae3117da/28510/food.webp 202w","sizes":"(min-width: 202px) 202px, 100vw"},"sources":[]},"width":202,"height":202}}}},{"text":"Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.","name":"Simon","src":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/22708c9b94487635256c6665ae3117da/28510/food.webp","srcSet":"/static/22708c9b94487635256c6665ae3117da/789ca/food.webp 51w,\\n/static/22708c9b94487635256c6665ae3117da/e6c54/food.webp 101w,\\n/static/22708c9b94487635256c6665ae3117da/28510/food.webp 202w","sizes":"(min-width: 202px) 202px, 100vw"},"sources":[]},"width":202,"height":202}}}}]}}}');
+module.exports = JSON.parse('{"data":{"allCustomersJson":{"nodes":[{"text":"Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.","name":"Monica","src":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/a77386d17d440124200e6b3d71e71497/18188/customer1.webp","srcSet":"/static/a77386d17d440124200e6b3d71e71497/89d20/customer1.webp 19w,\\n/static/a77386d17d440124200e6b3d71e71497/0852d/customer1.webp 38w,\\n/static/a77386d17d440124200e6b3d71e71497/18188/customer1.webp 75w","sizes":"(min-width: 75px) 75px, 100vw"},"sources":[]},"width":75,"height":75}}}},{"text":"Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.","name":"Angela","src":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/26bb47218e78035cad0035046b2542b8/18188/customer2.webp","srcSet":"/static/26bb47218e78035cad0035046b2542b8/89d20/customer2.webp 19w,\\n/static/26bb47218e78035cad0035046b2542b8/0852d/customer2.webp 38w,\\n/static/26bb47218e78035cad0035046b2542b8/18188/customer2.webp 75w","sizes":"(min-width: 75px) 75px, 100vw"},"sources":[]},"width":75,"height":75}}}},{"text":"Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.","name":"Ania","src":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/49bc7370c579f815f9a9b3574bce9c6a/18188/customer3.webp","srcSet":"/static/49bc7370c579f815f9a9b3574bce9c6a/89d20/customer3.webp 19w,\\n/static/49bc7370c579f815f9a9b3574bce9c6a/0852d/customer3.webp 38w,\\n/static/49bc7370c579f815f9a9b3574bce9c6a/18188/customer3.webp 75w","sizes":"(min-width: 75px) 75px, 100vw"},"sources":[]},"width":75,"height":75}}}}]}}}');
 
 /***/ }),
 
@@ -1788,7 +1910,7 @@ module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Gatsby De
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"allMenuJson":{"nodes":[{"title":"Pancake","text":"Making a reservation at Délicious restaurant is easy","src":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/f47d22b52a20aa44cd8cd1206575560b/28510/pancake.webp","srcSet":"/static/f47d22b52a20aa44cd8cd1206575560b/789ca/pancake.webp 51w,\\n/static/f47d22b52a20aa44cd8cd1206575560b/e6c54/pancake.webp 101w,\\n/static/f47d22b52a20aa44cd8cd1206575560b/28510/pancake.webp 202w","sizes":"(min-width: 202px) 202px, 100vw"},"sources":[]},"width":202,"height":202}}}},{"title":"Hamburger","text":"Making a reservation at Délicious restaurant is easy","src":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/ce0b1cf25f33848889cccf92545784a1/28510/menu.webp","srcSet":"/static/ce0b1cf25f33848889cccf92545784a1/789ca/menu.webp 51w,\\n/static/ce0b1cf25f33848889cccf92545784a1/e6c54/menu.webp 101w,\\n/static/ce0b1cf25f33848889cccf92545784a1/28510/menu.webp 202w","sizes":"(min-width: 202px) 202px, 100vw"},"sources":[]},"width":202,"height":202}}}},{"title":"Tuna steak","text":"Making a reservation at Délicious restaurant is easy","src":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/ce0b1cf25f33848889cccf92545784a1/28510/menu.webp","srcSet":"/static/ce0b1cf25f33848889cccf92545784a1/789ca/menu.webp 51w,\\n/static/ce0b1cf25f33848889cccf92545784a1/e6c54/menu.webp 101w,\\n/static/ce0b1cf25f33848889cccf92545784a1/28510/menu.webp 202w","sizes":"(min-width: 202px) 202px, 100vw"},"sources":[]},"width":202,"height":202}}}}]}}}');
+module.exports = JSON.parse('{"data":{"allMenuJson":{"nodes":[{"title":"Pancake","text":"Making a reservation at Délicious restaurant is easy","src":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/f47d22b52a20aa44cd8cd1206575560b/28510/pancake.webp","srcSet":"/static/f47d22b52a20aa44cd8cd1206575560b/789ca/pancake.webp 51w,\\n/static/f47d22b52a20aa44cd8cd1206575560b/e6c54/pancake.webp 101w,\\n/static/f47d22b52a20aa44cd8cd1206575560b/28510/pancake.webp 202w","sizes":"(min-width: 202px) 202px, 100vw"},"sources":[]},"width":202,"height":202}}}},{"title":"Egg","text":"Making a reservation at Délicious restaurant is easy","src":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/ce0b1cf25f33848889cccf92545784a1/28510/egg.webp","srcSet":"/static/ce0b1cf25f33848889cccf92545784a1/789ca/egg.webp 51w,\\n/static/ce0b1cf25f33848889cccf92545784a1/e6c54/egg.webp 101w,\\n/static/ce0b1cf25f33848889cccf92545784a1/28510/egg.webp 202w","sizes":"(min-width: 202px) 202px, 100vw"},"sources":[]},"width":202,"height":202}}}},{"title":"Tuna steak","text":"Making a reservation at Délicious restaurant is easy","src":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/22708c9b94487635256c6665ae3117da/28510/tuna.webp","srcSet":"/static/22708c9b94487635256c6665ae3117da/789ca/tuna.webp 51w,\\n/static/22708c9b94487635256c6665ae3117da/e6c54/tuna.webp 101w,\\n/static/22708c9b94487635256c6665ae3117da/28510/tuna.webp 202w","sizes":"(min-width: 202px) 202px, 100vw"},"sources":[]},"width":202,"height":202}}}}]}}}');
 
 /***/ })
 

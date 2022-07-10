@@ -1,17 +1,17 @@
 [
     {
-        "src": "../images/food.webp",
+        "src": "../images/customer1.webp",
+        "text": "Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.",
+        "name": "Monica"
+    },
+    {
+        "src": "../images/customer2.webp",
+        "text": "Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.",
+        "name": "Angela"
+    },
+    {
+        "src": "../images/customer3.webp",
         "text": "Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.",
         "name": "Ania"
-    },
-    {
-        "src": "../images/food.webp",
-        "text": "Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.",
-        "name": "Robert"
-    },
-    {
-        "src": "../images/food.webp",
-        "text": "Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.",
-        "name": "Simon"
     }
 ]

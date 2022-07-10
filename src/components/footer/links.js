@@ -8,8 +8,8 @@ const Links = ({  }) => {
 
 
   return (
-    <div>
-        <p className={styles.text}></p>
+    <div className={styles.linkWrapper}>
+        <p className={styles.text}>Quick Links</p>
   <Link className={styles.link} to="/">Home</Link>
   <Link className={styles.link} to="/">About</Link>
   <Link className={styles.link}  to="/">Services</Link>

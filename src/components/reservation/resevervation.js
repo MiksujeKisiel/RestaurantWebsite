@@ -6,7 +6,7 @@ const Reservation = ({ }) => {
 
 
 return (
-<section className={styles.section}>
+<section>
   <div className={styles.wrapper}>
     <StaticImage src="../../images/reservation.jpg" alt="A dinosaur" className={styles.image} />
     <div className={styles.smallWrapper}>

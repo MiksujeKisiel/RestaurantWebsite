@@ -4,9 +4,11 @@
     grid-gap: 20px;
     justify-content: stretch;
     margin: 50px 0;
+    max-width: 1200px;
+
     @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 1150px;
+   
       }
 }
 
