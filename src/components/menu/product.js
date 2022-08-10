@@ -1,29 +1,14 @@
 import * as React from "react"
 import * as styles from "./product.module.scss"
-import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-const Product = () => {
-  const data = useStaticQuery(graphql`
-  query MyQuery {
-   allMenuJson {
-     nodes {
-       title
-       text
-       src {
-         childImageSharp {
-           gatsbyImageData
-         }
-       }
-     }
-   }
-  }
-  `)
+const Product = ({data}) => {
+
    return (
 
      <ul className={styles.list}>
    
-{data.allMenuJson.nodes.map(product => {
+{data.nodes.map(product => {
      const { src, title, text} = product
      const pathToImage = getImage(src)
      return (

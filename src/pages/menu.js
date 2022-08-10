@@ -10,7 +10,7 @@ import Customers from "../components/customers/customers"
 import Gallery from "../components/gallery/gallery"
 import Footer from "../components/footer/footer"
 import HeroSection from "../components/heros/heroSection"
-
+import Tabs from "../components/menuPage/menuTabs"
 const MenuPage = () => {
 
  
@@ -20,7 +20,7 @@ const MenuPage = () => {
 <Layout>
 <HeroSection title="Food Menu"/>
   
-    <Menu/>
+    <Tabs/>
     <Reservation/>
     <Gallery/>
     <Footer/>

@@ -1,0 +1,17 @@
+[
+    {
+        "src": "../images/pancake.webp",
+        "text": "Making a reservation at Délicious restaurant is easy",
+        "title": "Pancake"
+    },
+    {
+        "src": "../images/egg.webp",
+        "text": "Making a reservation at Délicious restaurant is easy",
+        "title": "Egg"
+    },
+    {
+        "src": "../images/tuna.webp",
+        "text": "Making a reservation at Délicious restaurant is easy",
+        "title": "Tuna steak"
+    }
+]

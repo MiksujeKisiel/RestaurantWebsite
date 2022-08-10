@@ -1,37 +1,34 @@
-.navbar{
-    display: flex;
-    position: fixed;
-    top: 0;
-    justify-content: space-between;
-    padding: 0px 50px;
-    z-index: 100;
-    width: 100%;
+@import "./variables.module.scss";
+
     .linkWrapper{
         
         display: flex;
         justify-content: center;
         align-items: center;
-        .logo{
-            margin-right: 70px;
-            transform: scale(0.8);
-        }
         .link{
-            color: #4D312C;
+            color: #fe6040;
             font-weight: 500;
             padding: 28px 5px;
-            font-size: 14px;
+            font-size: 12px;
             margin: 0 20px;
+            @include breakpoint(md) {
+                color: #4D312C;
+            font-size: 14px;
+
+            }
         };
+        
     }
   
     .rightSection{
         display: flex;
         justify-content: center;
         align-items: center;
+        
             .menuButton {
                 background: #fe6040;
                 border: none;
-                font-size: 15px;
+                font-size: 14px;
                 padding: 20px 0;
                 width: 180px;
                 color: white;
@@ -53,7 +50,101 @@
                 color: white;
                 margin-right: 30px;
                 cursor: pointer;
+            transition: 0.3s ease all;
+
+                &.isScrolled{
+                    color: #fe6040;
+
+                }
 
             }
     }
-}
+
+
+   
+    .header {
+        backdrop-filter: blur(2px);
+        width: 100%;
+        height: $headerHeight;
+        padding: 0 1.5rem;
+        position: fixed;
+        z-index: 2;
+        &.isScrolled{
+            background: rgba(255,255,255,0.95);
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+            z-index: 10;
+         }
+        @include breakpoint(md) {
+            backdrop-filter: none;
+            padding: 0 10px;
+        }
+        transition: 0.3s ease all;
+       
+        .content{
+         
+            overflow: hidden;
+            color: $light;
+            margin: 0 auto;
+            max-width: 1920px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 100;
+            justify-content: center;
+    
+ 
+    
+            .nav {
+               
+                top: 0;
+                right: 100%;
+                bottom: 0;
+                width: 100%;
+                height: 100vh;
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background: rgba($dark, 0.9);
+                transform: translate(0);
+                transition: 0.3s ease transform;
+            
+                @include breakpoint(md) {
+                    transform: none;
+                    flex-direction: row;
+                    background: transparent;
+                    width: 100%;
+                    height: 100%;
+                    position: static;
+                justify-content: space-between;
+
+                }
+           
+    
+                &.isMenu {
+                    transform: translate(100%);
+                }
+            }
+    
+            .toggle {
+                cursor: pointer;
+                display: flex;
+                margin-left: auto;
+                align-items: center;
+                font-size: 30px;
+                transition: 0.3s ease all;
+                position: relative;
+                color: #1c1c1c;
+                &:hover {
+                    color: #c1c1c1;
+                }
+    
+                @include breakpoint(md) {
+                    display: none;
+                }
+            }
+        }
+    }

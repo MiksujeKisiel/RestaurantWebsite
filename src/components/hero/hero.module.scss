@@ -8,11 +8,13 @@
         height: 100vh;
         flex-direction: row;
         min-height: 650px;
-        .image{
+        max-height: 1300px;
+
+        .image {
             width: 50%;
         }
     }
-    
+
 }
 
 .smallWrapper {
@@ -35,8 +37,9 @@
 
         @media only screen and (min-width: 768px) {
             max-width: 550px;
-            
+
         }
+
         .title {
             color: #4D312C;
             line-height: 1.2;
@@ -50,20 +53,24 @@
             line-height: 1.4;
 
         }
-        
+
         @media only screen and (min-width: 1280px) {
             margin: 0 50px 0 0;
-            .text{
+
+            .text {
                 font-size: 18px;
                 font-weight: 400;
             }
-            .title{
+
+            .title {
                 font-weight: 500;
                 font-size: 58px;
             }
         }
-        .buttonWrapper{
+
+        .buttonWrapper {
             display: flex;
+
             .menuButton {
                 background: #fe6040;
                 border: none;
@@ -75,9 +82,10 @@
                 font-weight: 600;
                 margin: 20px 0;
                 align-self: flex-start;
-            
+
             }
-            .playButton{
+
+            .playButton {
                 border: none;
                 display: flex;
                 justify-content: center;
@@ -90,17 +98,13 @@
                 font-weight: 600;
                 margin: 20px 0;
                 background-color: #FFF4F2;
-                .playSvg{
+
+                .playSvg {
                     margin-right: 10px;
                 }
-            
+
             }
-            
+
         }
     }
 }
-
-
-
-
-

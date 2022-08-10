@@ -1,9 +1,24 @@
 import * as React from "react"
 import * as styles from "./menu.module.scss"
 import Product from "./product"
+import { useStaticQuery, graphql } from "gatsby"
 
 const Menu = ({  }) => {
-
+  const data = useStaticQuery(graphql`
+  query MyQuery {
+   allMenuJson {
+     nodes {
+       title
+       text
+       src {
+         childImageSharp {
+           gatsbyImageData
+         }
+       }
+     }
+   }
+  }
+  `)
   return (
     <section className={styles.section}>
       <div className={styles.wrapper}>
@@ -14,7 +29,7 @@ const Menu = ({  }) => {
     </div>
      <button className={styles.button}>Full-Menu</button>
      </div>
-    <Product/>
+    <Product data={data.allMenuJson}/>
     </div>
     </section>
   )
