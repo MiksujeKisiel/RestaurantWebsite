@@ -229,6 +229,29 @@ var text = "hero-module--text--XoF05";
 
 /***/ }),
 
+/***/ "./src/components/menuPage/menuPage.module.scss":
+/*!******************************************************!*\
+  !*** ./src/components/menuPage/menuPage.module.scss ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "button": () => (/* binding */ button),
+/* harmony export */   "listWrapper": () => (/* binding */ listWrapper),
+/* harmony export */   "product": () => (/* binding */ product),
+/* harmony export */   "wrapper": () => (/* binding */ wrapper)
+/* harmony export */ });
+// Exports
+var wrapper = "menuPage-module--wrapper--9Sqpj";
+var button = "menuPage-module--button--zFTyo";
+var listWrapper = "menuPage-module--listWrapper--+nNB1";
+var product = "menuPage-module--product--4bFID";
+
+
+/***/ }),
+
 /***/ "./src/components/menu/menu.module.scss":
 /*!**********************************************!*\
   !*** ./src/components/menu/menu.module.scss ***!
@@ -1489,6 +1512,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _product__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./product */ "./src/components/menuPage/product.js");
 /* harmony import */ var _menudata__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menudata */ "./src/components/menuPage/menudata.js");
+/* harmony import */ var _menuPage_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menuPage.module.scss */ "./src/components/menuPage/menuPage.module.scss");
+
 
 
 
@@ -1498,10 +1523,18 @@ const Tabs = () => {
     0: component,
     1: setComponent
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(_menudata__WEBPACK_IMPORTED_MODULE_2__.menu[0].component);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, _menudata__WEBPACK_IMPORTED_MODULE_2__.menu.map((item, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    onClick: () => setComponent(item.component)
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, item.text)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "ListWrapper"
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _menuPage_module_scss__WEBPACK_IMPORTED_MODULE_3__.wrapper
+  }, _menudata__WEBPACK_IMPORTED_MODULE_2__.menu.map((item, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    onClick: () => setComponent(item.component),
+    key: item.text,
+    onKeyDown: () => setComponent(item.component),
+    role: "button",
+    tabIndex: 0
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: _menuPage_module_scss__WEBPACK_IMPORTED_MODULE_3__.button
+  }, item.text)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: _menuPage_module_scss__WEBPACK_IMPORTED_MODULE_3__.listWrapper
   }, component.map((menu, index) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_product__WEBPACK_IMPORTED_MODULE_1__["default"], {
     key: menu.name,
     name: menu.name,
@@ -1527,7 +1560,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "menu": () => (/* binding */ menu)
 /* harmony export */ });
 const menu = [{
-  text: "Tapas",
+  text: "Pizza",
   component: [{
     name: "bruschetta classic",
     price: "79kr",
@@ -1600,7 +1633,7 @@ const menu = [{
     content: "Fløtesaus m/4 ost"
   }]
 }, {
-  text: "SmashBurger",
+  text: "Burgers",
   component: [{
     name: "Fryd burger",
     content: "bacon, cheddar, pickles, tomat, salat, syltet løk, majones",
@@ -1675,7 +1708,7 @@ const menu = [{
     allergen: "(E, G, M, SN)"
   }]
 }, {
-  text: "Salater",
+  text: "Salads",
   component: [{
     name: "Carpresse",
     price: "159kr",
@@ -1691,65 +1724,6 @@ const menu = [{
     price: "169kr",
     content: "Div, grønnsaker, vinegrete",
     allergen: "(G, SN, M, SK)"
-  }]
-}, {
-  text: "Barnemeny",
-  component: [{
-    name: "kylling nuggets",
-    content: "M/pommes",
-    price: "79kr",
-    allergen: "(G, M, E)"
-  }, {
-    name: "pølse",
-    content: "M/pommes",
-    price: "79kr",
-    allergen: "(G)"
-  }, {
-    name: "pasta bolognese",
-    price: "79kr",
-    allergen: "(G, M, E)"
-  }]
-}, {
-  text: "Dessert",
-  component: [{
-    name: "Sjokoladefodant",
-    price: "98kr",
-    allergen: "(M, E)"
-  }, {
-    name: "Eplekake",
-    content: "Mandel, hassel og valnøtt",
-    price: "89kr",
-    allergen: "(G, M, E, N)"
-  }, {
-    name: "Tiramisu",
-    price: "98kr",
-    allergen: "(M, E, G)"
-  }]
-}, {
-  text: "Kaffe",
-  component: [{
-    name: "filter kaffe",
-    price: "29kr",
-    allergen: "(E)"
-  }, {
-    name: "te",
-    price: "29kr",
-    allergen: "(E)"
-  }, {
-    name: "cappuchino",
-    price: "37kr"
-  }, {
-    name: "dbl.",
-    price: "42kr",
-    allergen: "(M, G)"
-  }, {
-    name: "latte",
-    price: "37kr",
-    allergen: "(E)"
-  }, {
-    name: "americano",
-    price: "34kr",
-    allergen: "(M)"
   }]
 }, {
   text: "Flaske",
@@ -1784,77 +1758,6 @@ const menu = [{
     name: "erdinger alk.fri",
     price: "69kr"
   }]
-}, {
-  text: "Tapp",
-  component: [{
-    name: "ringnes",
-    price: "89kr",
-    capacity: "0,5",
-    pricetwo: "49kr",
-    capacitytwo: "0,25"
-  }, {
-    name: "schous",
-    price: "89kr",
-    capacity: "0,4"
-  }, {
-    name: "kronenbourg blanc",
-    price: "98kr",
-    capacity: "0,5",
-    pricetwo: "54kr",
-    capacitytwo: "0,25"
-  }, {
-    name: "frydenlund juice ipa",
-    price: "98kr",
-    capacity: "0,5",
-    pricetwo: "54kr",
-    capacitytwo: "0,25"
-  }, {
-    name: "Haand. lile lørdag",
-    price: "98kr",
-    capacity: "0,5",
-    pricetwo: "79kr",
-    capacitytwo: "0,33"
-  }, {
-    name: "guiness",
-    price: "98kr"
-  }, {
-    name: "weihenstephan",
-    price: "98kr",
-    allergen: "(SE, SI)"
-  }]
-}, {
-  text: "Mineralvann",
-  component: [{
-    name: "pepsimax",
-    price: "44kr"
-  }, {
-    name: "pepsi",
-    price: "44kr"
-  }, {
-    name: "solo",
-    price: "44kr"
-  }, {
-    name: "7up free",
-    price: "44kr"
-  }, {
-    name: "eplemost",
-    price: "44kr"
-  }, {
-    name: "appelsinjuice",
-    price: "44kr"
-  }, {
-    name: "blå farris",
-    price: "44kr"
-  }, {
-    name: "grønn farris",
-    price: "44kr"
-  }, {
-    name: "tøyen cola",
-    price: "44kr"
-  }, {
-    name: "battery",
-    price: "49kr"
-  }]
 }];
 
 /***/ }),
@@ -1872,6 +1775,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _menuPage_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menuPage.module.scss */ "./src/components/menuPage/menuPage.module.scss");
+
 
 
 const Product = ({
@@ -1880,7 +1785,9 @@ const Product = ({
   price,
   content
 }) => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, name, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, allergen)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, price)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, content));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _menuPage_module_scss__WEBPACK_IMPORTED_MODULE_1__.product
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, price)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, content));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Product);
